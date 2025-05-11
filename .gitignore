@@ -1,2 +1,13 @@
-*.zip
-*.tar.gz
+proto/*.pb.go
+proto/*_grpc.pb.go
+
+grpcurl.tar.gz
+grpcurl.zip
+
+.DS_Store
+Thumbs.db
+
+*.log
+*.tmp
+
+*.out

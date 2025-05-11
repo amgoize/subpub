@@ -11,7 +11,7 @@ import (
 	"vk/config"
 	"vk/internal/subpub"
 
-	"vk/amgoize/proto"
+	"vk/proto"
 
 	"google.golang.org/grpc"
 	"google.golang.org/grpc/codes"

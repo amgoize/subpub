@@ -1,0 +1,15 @@
+version: '3'
+
+tasks:
+  gen-proto:
+    desc: Генерация gRPC и protobuf файлов
+    cmds:
+      - |
+        protoc proto/subpub.proto \
+          --go_out=./proto \
+          --go-grpc_out=./proto
+    sources:
+      - proto/subpub.proto
+    generates:
+      - proto/subpub.pb.go
+      - proto/subpub_grpc.pb.go
